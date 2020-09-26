@@ -1,0 +1,33 @@
+<table class="table table-stiped">
+  <thead class="thead-dark">
+<tr>
+  <th></th>
+<th>Nome</th>
+<th>Ativo</th>
+<th>Ações</th>
+</tr>
+
+  </thead>
+<tbody *ngIf=" cargos && cargos.length" >
+<tr *ngFor="let cargo of cargos">
+<td style="visibility: hidden;">{{cargo.id}}</td>
+<td>{{cargo.nome| uppercase}}</td>
+<td>{{cargo.ativo}}</td>
+
+<td>
+  <button class="btn btn-success"></button>
+  <button class="btn btn-danger"></button>
+</td>
+</tr>
+</tbody>
+<tfoot *ngIf="!cargos.length" >
+<tr>
+  <td>
+    <h4>
+      Nenhum Time Encontrado
+    </h4>
+  </td>
+</tr>
+
+</tfoot>
+</table>

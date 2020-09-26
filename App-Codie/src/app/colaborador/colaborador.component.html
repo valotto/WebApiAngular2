@@ -1,0 +1,48 @@
+
+
+
+
+
+
+<table class="table table-stiped">
+  <thead class="thead-dark">
+<tr>
+  <th></th>
+  <th>Nome</th>
+<th>Time</th>
+<th>Cargo</th>
+<th>Descricao</th>
+<th>Data Inicio</th>
+<th>Ativo</th>
+<th>Ações</th>
+
+
+</tr>
+
+  </thead>
+<tbody *ngIf="colaboradores && colaboradores.length" >
+<tr *ngFor="let colaborador of colaboradores">
+<td style="visibility: hidden;">{{colaborador.id}}</td>
+<td>{{colaborador.nome | uppercase}}</td>
+<td>{{colaborador.timeID}}</td>
+<td>{{colaborador.cargoID}}</td>
+<td>{{colaborador.dataInicio}}</td>
+<td>{{colaborador.descricao}}</td>
+<td>{{colaborador.ativo}}</td>
+<td>
+  <button class="btn btn-success"></button>
+  <button class="btn btn-danger"></button>
+</td>
+</tr>
+</tbody>
+<tfoot *ngIf="!colaboradores.length" >
+<tr>
+  <td>
+    <h4>
+      Nenhum Colaborador Encontrado
+    </h4>
+  </td>
+</tr>
+
+</tfoot>
+</table>

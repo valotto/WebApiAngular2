@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Codie2", "Codie2\Codie2.csproj", "{1CF05138-4D77-4160-BF30-47B2C681839B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1CF05138-4D77-4160-BF30-47B2C681839B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CF05138-4D77-4160-BF30-47B2C681839B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CF05138-4D77-4160-BF30-47B2C681839B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CF05138-4D77-4160-BF30-47B2C681839B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {381B973E-5E18-419A-A9D0-B0642446B361}
+	EndGlobalSection
+EndGlobal

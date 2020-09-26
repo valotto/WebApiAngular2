@@ -1,0 +1,33 @@
+<table class="table table-stiped">
+  <thead class="thead-dark">
+<tr>
+  <th></th>
+<th>Nome</th>
+<th>Ativo</th>
+<th>Ações</th>
+</tr>
+
+  </thead>
+<tbody *ngIf=" timescodies && timescodies.length" >
+<tr *ngFor="let timescodie of timescodies">
+<td style="visibility: hidden;">{{timescodie.id}}</td>
+<td>{{timescodie.nome| uppercase}}</td>
+<td>{{timescodie.ativo}}</td>
+
+<td>
+  <button class="btn btn-success"></button>
+  <button class="btn btn-danger"></button>
+</td>
+</tr>
+</tbody>
+<tfoot *ngIf="!timescodies.length" >
+<tr>
+  <td>
+    <h4>
+      Nenhum Time Encontrado
+    </h4>
+  </td>
+</tr>
+
+</tfoot>
+</table>
